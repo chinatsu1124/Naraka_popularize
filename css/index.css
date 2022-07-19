@@ -1,0 +1,925 @@
+/* 第一页 */
+.firstWeb {
+	width: 100%;
+	height: 10.8rem;
+	position: relative;
+}
+.backVideo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.titleVideo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.NAKAPABox {
+	width: 4.65rem;
+	height: 5.03rem;
+	position: absolute;
+	top: 3.14rem;
+	left: 7.27rem;
+}
+.NAKAPAPic {
+	width: 4.65rem;
+	height: 3.37rem;
+	background: url(../images/NAKAPA.png)no-repeat;
+	background-size: cover;
+}
+/* 购买按钮 */
+.firstOffer {
+	width: 4.57rem;
+	height: 0.88rem;
+	margin-top: 0.78rem;
+	background: url(../images/firstOfferAcitve.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.firstOffer:hover {
+	background: url(../images/firstOfferUnactive.png)no-repeat;
+	background-size: cover;
+}
+/* 第二页 */
+.twoWeb {
+	width: 100%;
+	height: 10.79rem;
+	background-color: #101010;
+	position: relative;
+	overflow: hidden;
+}
+.rightBack {
+	width: 6.87rem;
+	height: 11.07rem;
+	background: url(../images/rightBack.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+}
+.bg {
+	width: 19.20rem;
+	height: 10.80rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+.bgVideo {
+	width: 100%;
+	height: 100%;
+	/* margin-left: 50px; */
+}
+/* 右边介绍 */
+.comment-item {
+	width: 6.03rem;
+	height: 1.84rem;
+	margin: 0 auto 0.36rem;
+	box-sizing: border-box;
+	font-size: 0.18rem;
+	color: #ffffff;
+	line-height: 0.82rem;
+	margin-top: 0.4rem;
+	background: url(../images/itemBox.png)no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.comment-item:nth-child(1){margin-top: 60px;}
+.comment-item .media {
+	width: 5.43rem;
+	height: 0.49rem;
+	font-size: 24px;
+	line-height: 49px;
+	margin: 0.08rem 0 0 0.22rem;
+}
+.text-wrap {
+	width: 5.43rem;
+	height: 0.6rem;
+	margin: 0.30rem 0 0 0.22rem;
+	line-height: 0.3rem;
+}
+/* 购买按钮 */
+.twoWebOffer {
+	width: 4.57rem;
+	height: 0.88rem;
+	margin-top: 0.78rem;
+	background: url(../images/firstOfferAcitve.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	left: 1.24rem;
+	bottom: 1.69rem;
+}
+.twoWebOffer:hover {
+	background: url(../images/firstOfferUnactive.png)no-repeat;
+	background-size: cover;
+}
+/* 第三页 */
+.thirdWeb {
+	width: 100%;
+	height: 10.80rem;
+	/* background-color: #000; */
+	position: relative;
+	overflow: hidden;
+}
+/* 特惠 */
+.thirdOffer {
+	width: 4.57rem;
+	height: 0.88rem;
+	position: absolute;
+	z-index: 4;
+	left: 4.37rem;
+	top: 5.57rem;
+	background: url(../images/firstOfferAcitve.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.thirdOffer:hover {
+	background: url(../images/firstOfferUnactive.png)no-repeat;
+	background-size: cover;
+}
+.title-hero {
+	width: 3.70rem;
+	height: 1.19rem;
+	position: absolute;
+	top: 0.54rem;
+	right: 0;
+	z-index: 2;
+	pointer-events: none;
+	background: url(../images/titleHero.png)no-repeat;
+	background-size: cover;
+}
+.hero-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s opacity;
+}
+.hero-item .intro {
+	position: absolute;
+	top: 3rem;
+	left: 4rem;
+	width: 4.4rem;
+	line-height: 1.5;
+	-webkit-transform: translate(100px, 0);
+	transform: translate(100px, 0);
+	-webkit-transition: 0.5s -webkit-transform;
+	transition: 0.5s -webkit-transform;
+	transition: 0.5s transform;
+	transition: 0.5s transform, 0.5s -webkit-transform;
+}
+.hero-item.active .intro {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+/* 武器界面 */
+.wrap-box {
+	position: relative;
+	color: #000;
+}
+.hero-nav {
+	position: absolute;
+	left: 1.80rem;
+	top: 1.80rem;
+	height: 7rem;
+	border-left: 1px solid #a6a6a7;
+	z-index: 2;
+}
+.hero-nav li {
+	cursor: pointer;
+	margin-bottom: 0.3rem;
+	transform: translate(-50%,-50%);
+}
+/* 设置空伪元素 */
+.hero-nav li:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) scale(0.75);
+	transform: translate(-50%, -50%) scale(0.75);
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+/* 未选中的小图标 */
+.hero-nav li.jch {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: -454px -218px;
+	background-size: 554px 554px;
+}
+.hero-nav li.jn {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: -246px -450px;
+	background-size: 554px 554px;
+}
+.hero-nav li.nhy {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: 0px -450px;
+	background-size: 554px 554px;
+}
+.hero-nav li.tme {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: -164px -450px;
+	background-size: 554px 554px;
+}
+.hero-nav li.tymht {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: -454px -310px;
+	background-size: 554px 554px;
+}
+.hero-nav li.th {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: -82px -450px;
+	background-size: 554px 554px;
+}
+.hero-nav li.ydj {
+	width: 0.78rem;
+	height: 0.94rem;
+	background: url(../images/sprite.png)no-repeat;
+	background-position: -454px -122px;
+	background-size: 554px 554px;
+}
+/* 选中的大图标 */
+.hero-nav li.jch:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -246px -123px;
+	background-size: 554px 544px;
+}
+.hero-nav li.jn:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -246px -243px;
+	background-size: 554px 544px;
+}
+.hero-nav li.nhy:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -350px 0px;
+	background-size: 554px 544px;
+}
+.hero-nav li.tme:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -350px -120px;
+	background-size: 554px 544px;
+}
+.hero-nav li.tymht:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -350px -240px;
+	background-size: 554px 544px;
+}
+.hero-nav li.th:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -454px -0px;
+	background-size: 554px 544px;
+}
+.hero-nav li.ydj:after {
+	width: 1rem;
+	height: 1.16rem;
+	background: url(../images/sprite.png);
+	background-position: -246px -0px;
+	background-size: 554px 544px;
+}
+/* 鼠标移入移出样式变化 */
+.hero-nav li:hover:after, .hero-nav li.active:after {
+	opacity: 1;
+	-webkit-transform: translate(-50%,-50%) scale(1);
+	transform: translate(-50%,-50%) scale(1);
+}
+.wrap-box .intro {
+	position: absolute;
+	top: 3rem;
+	left: 4rem;
+	height: 1.72rem;
+	width: 4.4rem;
+	line-height: 1.5;
+	-webkit-transform: translate(100px, 0);
+	-webkit-transition: 0.5s -webkit-transform;
+	transition: 0.5s -webkit-transform;
+	transition: 0.5s transform;
+	transition: 0.5s transform, 0.5s -webkit-transform;
+}
+.name {
+	width: 4.40rem;
+	height: 0.85rem;
+	display: flex;
+	-webkit-box-align: baseline;
+	align-items: baseline;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 0.15rem;
+	padding-bottom: 0.1rem;
+	white-space: nowrap;
+}
+.name::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 5.03rem;
+	height: 0.07rem;
+	background-color: red;
+	background: url(../images/sprite.png);
+	background-size:554px 544px;
+	background-position: 0px -537px;
+}
+.intro .desc {
+	width: 4.40rem;
+	height: 0.72rem;
+	font-size: 16px;
+	color: #000;
+}
+.hero-name {
+	font-size: 50px;
+	color: #000;
+	font-family: sans-serif;
+}
+.hero-item.jch .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/jch.png)no-repeat;
+	background-size: cover;
+}
+.hero-item.jn .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/jn.png)no-repeat;
+	background-size: cover;
+}
+.hero-item.nhy .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/nhy.png)no-repeat;
+	background-size: cover;
+}
+.hero-item.tme .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/tme.png)no-repeat;
+	background-size: cover;
+}
+.hero-item.tymht .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/tymht.png)no-repeat;
+	background-size: cover;
+}
+.hero-item.th .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/th.png)no-repeat;
+	background-size: cover;
+}
+.hero-item.ydj .hero-pic {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/ydj.png)no-repeat;
+	background-size: cover;
+}
+/* 第四页 */
+.fourWeb {
+	width: 100%;
+	height: 10.80rem;
+	position: relative;
+	overflow: hidden;
+	color: #ffffff;
+	background: url(../images/fourBack.png)no-repeat;
+	background-size: cover;
+}
+.fourOffer {
+	width: 4.57rem;
+	height: 0.88rem;
+	position: absolute;
+	z-index: 5;
+	left: 6.62rem;
+	top: 1.8rem;
+	background: url(../images/firstOfferAcitve.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.fourOffer:hover {
+	background: url(../images/firstOfferUnactive.png)no-repeat;
+	background-size: cover;
+}
+.fourWeb:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8.96rem;
+	height: 5.84rem;
+	background: url(../images/weaponShadow.png)no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+.title-weapon {
+	width: 4.59rem;
+	height: 1.19rem;
+	position: absolute;
+	top: 0.6rem;
+	right: 0;
+	background: url(../images/titleWeapon.png)no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+/* 展示框 */
+.content-box {
+	width: 17.80rem;
+	height: 10.80rem;
+	position: absolute;
+	right: 0;
+	z-index: 4;
+	display: flex;
+}
+/* 选择武器 */
+.weapon-nav {
+	width: 3.56rem;
+	height: 10.80rem;
+}
+.weapon-tab {
+	width: 3.56rem;
+	height: 0.85rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -0px;
+	background-size: 1581px 1080px;
+}
+.weapon-tab li{
+	position: relative;
+	flex: 1;
+	font-size: 36px;
+	line-height: 0.85rem;
+	cursor: pointer;
+	color: #bb8e90;
+}
+.weapon-tab li.active {
+	color: #ffffff;
+}
+/* 近战与远程中间的线 */
+.weapon-tab li:nth-child(n+2):before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -0.16rem;
+	height: 0.33rem;
+	border-left: 1px solid #bb8e90;
+}
+/* 选择武器类型下边线 */
+.weapon-tab li:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	-webkit-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	width: 0;
+	border-top: 2px solid #aa2b30;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+.weapon-tab li:hover:after, .weapon-tab li.active:after {
+	width: 1rem;
+}
+
+/* 左边武器 */
+.weapon-icons {
+	width: 3.55rem;
+	height: 9.95rem;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0.85rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,253,253,0.11);
+}
+.weapon-nav .icon-item:nth-child(6n+1):before {
+	background: url(../images/line1.png)center no-repeat;
+}
+.weapon-nav .icon-item:nth-child(6n+2):before {
+	background: url(../images/line2.png)center no-repeat;
+}
+.weapon-nav .icon-item:nth-child(6n+3):before {
+	background: url(../images/line3.png)center no-repeat;
+}
+.weapon-nav .icon-item:nth-child(6n+4):before {
+	background: url(../images/line4.png)center no-repeat;
+}
+.weapon-nav .icon-item:nth-child(6n+5):before {
+	background: url(../images/line5.png)center no-repeat;
+}
+.weapon-nav .icon-item:nth-child(6n+6):before {
+	background: url(../images/line6.png)center no-repeat;
+}
+.weapon-nav .icon-item::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+/* 单个武器 */
+.icon-item  {
+	position: relative;
+	flex: 1;
+	width: 100%;
+	cursor: pointer;
+}
+/* 未选中 */
+.icon-item[data-name=gj] .icon {
+	width: 1.78rem;
+	height: 0.25rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -11px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=gj]:hover .icon, .icon-item[data-name=gj].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1260px -11px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=hp] .icon {
+	width: 1.78rem;
+	height: 0.35rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -348px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=hp]:hover .icon, .icon-item[data-name=hp].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -309px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=ln] .icon {
+	width: 1.54rem;
+	height: 0.28rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -1236px -40px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=ln]:hover .icon, .icon-item[data-name=ln].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -40px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=nc] .icon {
+	width: 1.78rem;
+	height: 0.29rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -420px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=nc]:hover .icon, .icon-item[data-name=nc].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -387px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=pht] .icon {
+	width: 1.54rem;
+	height: 0.50rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -876px -191px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=pht]:hover .icon, .icon-item[data-name=pht].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -191px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=wyc] .icon {
+	width: 1.24rem;
+	height: 0.60rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -245px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=wyc]:hover .icon, .icon-item[data-name=wyc].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -846px -245px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=ywf] .icon {
+	width: 1.78rem;
+	height: 0.47rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -140px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=ywf]:hover .icon, .icon-item[data-name=ywf].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -718px -89px;
+	background-size: 1581px 1080px;
+}
+
+.icon-item[data-name=cq] .icon {
+	width: 1.79rem;
+	height: 0.23rem;
+	background: url(../images/weaponTotal.png);
+	background-position: -1394px -40px;
+	background-size: 1581px 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.icon-item[data-name=cq]:hover .icon, .weapon-nav .icon-item[data-name=cq].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -72px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=td]:hover .icon, .weapon-nav .icon-item[data-name=td].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1392px -126px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=kd]:hover .icon, .weapon-nav .icon-item[data-name=kd].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1261px -72px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=cj]:hover .icon, .weapon-nav .icon-item[data-name=cj].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -154px;
+	background-size: 1581px 1080px;
+}
+/* 已选中 */
+.icon-item[data-name=cq].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -72px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=td] .icon {
+	width: 1.79rem;
+	height: 0.23rem;
+	background: url(../images/weaponTotal.png);
+	background-position: -1260px -99px;
+	background-size: 1581px 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.icon-item[data-name=td].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1392px -126px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=kd] .icon {
+	width: 1.79rem;
+	height: 0.23rem;
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -99px;
+	background-size: 1581px 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.icon-item[data-name=kd].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1261px -72px;
+	background-size: 1581px 1080px;
+}
+.icon-item[data-name=cj] .icon {
+	width: 1.79rem;
+	height: 0.23rem;
+	background: url(../images/weaponTotal.png);
+	background-position: -1260px -154px;
+	background-size: 1581px 1080px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.icon-item[data-name=cj].active .icon {
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -154px;
+	background-size: 1581px 1080px;
+}
+/* 武器展示 */
+.weapon-list {
+	width: 14.22rem;
+	height: 10.80rem;
+}
+/* 右边展示区域盒子 */
+.weapon-item {
+	position: absolute;
+	top: 0;
+	left: 5rem;
+	right: 0;
+	height: 100%;
+	opacity: 0;
+	transition: 0.5s opacity;
+	-webkit-transform: translate(0, 80px);
+	transform: translate(0, 80px);
+	opacity: 0;
+}
+/* 图片 */
+.weapon-item .pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	-webkit-transform: translate(0, 80px);
+	transform: translate(0, 80px);
+	opacity: 0;
+}
+/* 介绍 */
+.weapon-item .intro {
+	position: absolute;
+	top: 7.4rem;
+	left: 50%;
+	margin-left: -3.6rem;
+	width: 7.2rem;
+	-webkit-transform: translate(0, 120px);
+	transform: translate(0, 120px);
+	opacity: 0;
+}
+.weapon-item.active .pic, .weapon-item.active .intro {
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-transition: 0.5s -webkit-transform;
+	transition: 0.5s -webkit-transform;
+	transition: 0.5s transform;
+	transition: 0.5s transform, 0.5s -webkit-transform;
+}
+.weapon-item .name {
+	position: relative;
+	margin-bottom: 0.16rem;
+	padding-bottom: 0.2rem;
+	font-size: 50px;
+	color: #ca1115;
+}
+.weapon-item .name:after {
+	background: url(../images/weaponTotal.png);
+	background-position: -1078px -0px;
+	background-size: 1581px 1080px;
+}
+.weapon-item .desc {
+	width: 7.2rem;
+	height: 0.3rem;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #e7e7e7;
+}
+
+
+
+.weapon-item.cq .pic {
+	background: url(../images/qiang.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.td .pic {
+	background: url(../images/td.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.kd .pic {
+	background: url(../images/kd.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.cj .pic {
+	background: url(../images/cj.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.gj .pic {
+	background: url(../images/gj.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.hp .pic {
+	background: url(../images/hp.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.ln .pic {
+	background: url(../images/ln.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.nc .pic {
+	background: url(../images/nc.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.pht .pic {
+	background: url(../images/pht.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.wyc .pic {
+	background: url(../images/wyc.png)center no-repeat;
+	background-size: contain;
+}
+.weapon-item.ywf .pic {
+	background: url(../images/ywf.png)center no-repeat;
+	background-size: contain;
+}
+/* 回到顶部 */
+.comeBack {
+	width: 1.47rem;
+	height: 1.47rem;
+	position: fixed;
+	z-index: 98;
+	background: url(../images/comback.png)no-repeat;
+	background-size: cover;
+	right: 0.4rem;
+	top: 7.8rem;
+	cursor: pointer;
+}
+.unactive {
+	display: none;
+}
+.active {
+	opacity: 1;
+	z-index: 1;
+}
